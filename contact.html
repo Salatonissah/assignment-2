@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>James restaurant</h1>
+</body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea><br><br>
+        <input type="submit" value="send">
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+        const message = document.querySelector("#message").value;
+        if (name - "" || email- "" || message- "") {
+            alert("Please fill out this field.");
+        } else {
+            alert("thank you for the message!");
+        }
+    });
+});
+    </script>
+</main>
+<script src="scripts/script2.js"></script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>James restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Main Courses</h2>
+            <table>
+                <tr>
+                    <th>Dish</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                    <td>2500ksh</td>
+                </tr>
+                <tr>
+                    <td>Fish and fries</td>
+                    <td>1200ksh</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Desserts</h2>
+            <table>
+                <tr>
+                    <th>Dessert</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Chocolate cake</td>
+                    <td>180ksh</td>
+                </tr>
+                <tr>
+                    <td>Ice cream</td>
+                    <td>210ksh</td>
+                </tr>
+            </table>
+        </section>
+        <h2>Menu</h2>
+        <table border="0">
+            <tr>
+                <td><img src="images/images2.jpg" alt="dish 1"></td>
+                <td><h2>Dish 2</h2><p>fish and chips</p></td>
+                <td><img src="images/images5.jpg" alt="dish2"></td>
+                <td><h2>dessert</h2><p>pasta</p></td>
+            </tr>
+        </table>
+        <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const navToggle = document.querySelector(".nav-toggle");
+    navToggle.addEventListener("click", function () {
+        document.querySelector("nav").classList.toggle("open");
+    });
+});
+        </script>
+    </main>
+    <script src="scripts/script3.js"></script>
+</body>
+</html>

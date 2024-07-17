@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>James's restaurant</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>James restaurant</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Welcome to our restaurant</h2>
+            <p>we offer a wide variety of dishes.This restaurant was founded with the goal of providing high quality food to both the local and international community. It was founded by Mr James Wayne in 2001 in Nairobi and is currently one of the most famous restaurants in the city due to its affordable and high quality dishes.</p>
+            <img src="images/images1.jpg" alt="Founder">
+            <img src="images/images4.jpg" alt="">
+            <script>
+               document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".animate");
+    elements.forEach(function(element) {
+        element.addEventListener("mouseover", function() {
+            element.classList.add("animated");
+        });
+        element.addEventListener("mouseout", function(p) {
+            element.classList.remove("animated");
+        })
+    })
+}) 
+            </script>
+        </main>
+        <script src="scripts/script1.js"></script>
+    </body>
+</html>
